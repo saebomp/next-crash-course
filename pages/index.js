@@ -14,4 +14,4 @@ export default function Home() {
 
 
 // npm run dev
-// https://www.youtube.com/watch?v=mTz0GXj8NN0    21:06
+// https://www.youtube.com/watch?v=mTz0GXj8NN0   23:36
