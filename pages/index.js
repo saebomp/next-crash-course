@@ -1,17 +1,30 @@
+import Head from 'next/head'
 
-export default function Home() {
+export default function Home({articles}) {
+  console.log(articles)
   return (
     <div>
-      <head>
+      <Head>
         <title>WebDev News</title>
         <meta name='keywords' content='web development, programming' />
-      </head>
+      </Head>
       <h1>Welcome to Next</h1>
     </div>
   )
 }
 
+export const getStaticProps = async () => {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
+  const articles = await res.json()
+
+  return {
+    props: {
+      articles
+    }
+  }
+} 
+
 
 
 // npm run dev
-// https://www.youtube.com/watch?v=mTz0GXj8NN0   23:36
+// https://www.youtube.com/watch?v=mTz0GXj8NN0  33:57
