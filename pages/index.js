@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import ArticleList from '../components/ArticleList'
+
 
 export default function Home({articles}) {
   console.log(articles)
@@ -8,7 +10,7 @@ export default function Home({articles}) {
         <title>WebDev News</title>
         <meta name='keywords' content='web development, programming' />
       </Head>
-      <h1>Welcome to Next</h1>
+      <ArticleList articles={articles} />
     </div>
   )
 }
@@ -27,4 +29,4 @@ export const getStaticProps = async () => {
 
 
 // npm run dev
-// https://www.youtube.com/watch?v=mTz0GXj8NN0  33:57
+// https://www.youtube.com/watch?v=mTz0GXj8NN0  40:00
