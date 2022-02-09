@@ -29,4 +29,4 @@ export const getStaticProps = async () => {
 
 
 // npm run dev
-// https://www.youtube.com/watch?v=mTz0GXj8NN0  40:00
+// https://www.youtube.com/watch?v=mTz0GXj8NN0  50;00
