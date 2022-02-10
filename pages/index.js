@@ -29,4 +29,14 @@ export const getStaticProps = async () => {
 
 
 // npm run dev
-// https://www.youtube.com/watch?v=mTz0GXj8NN0  50;00
+// https://www.youtube.com/watch?v=mTz0GXj8NN0  56:31
+
+
+// package.js에서 "Script" 에서 "build": "next build && next export", 로 바꾸고
+
+// npm run build
+// npm i -g serve
+// serve -s out -p 8000
+// localhost:8000에서 돌아감
+
+//out 폴더 빼고 다 지워도 앱 돌아감
